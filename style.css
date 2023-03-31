@@ -110,7 +110,7 @@ body {
     border-radius: 50px;
 }
 
-.confirmation-button-inactive p {
+.confirmation-button-text-inactive {
     padding-top: 6px;
     font-size: 20px;
     line-height: 23px;
