@@ -114,6 +114,6 @@ body::-webkit-scrollbar, .product-list::-webkit-scrollbar{
 }
 
 /* Edge */
-html, .product-list {
+body, .product-list {
     -ms-overflow-style: none;
 }
