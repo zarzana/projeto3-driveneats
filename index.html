@@ -10,7 +10,8 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-  </head>
+    <script src="script.js"></script>
+</head>
   <body>
     <div class="top-bar">
         <h1 class="top-bar-title">DrivenEats</h1>
@@ -18,7 +19,7 @@
     </div>
     <div class="content">
         <h3 class="category-title">Primeiro, seu prato</h3>
-        <div class="product-list">
+        <div class="product-list" id="dishes">
             <div class="product-box">
                 <div class="product-box-content">
                     <img src="./images/spaghetti_alle_vongole.png">
@@ -57,7 +58,7 @@
             </div>
         </div>
         <h3 class="category-title">Agora, sua bebida</h3>
-        <div class="product-list">
+        <div class="product-list" id="drinks">
             <div class="product-box">
                 <div class="product-box-content">
                     <img src="./images/coca-cola.jpg">
@@ -87,7 +88,7 @@
             </div>
         </div>
         <h3 class="category-title">Por fim, sua sobremesa</h3>
-        <div class="product-list">
+        <div class="product-list" id="desserts">
             <div class="product-box">
                 <div class="product-box-content">
                     <img src="./images/tiramisu.png">
@@ -119,7 +120,7 @@
     </div>
     <div class="bottom-bar">
         <div class="confirmation-button-inactive">
-            <p class="confirmation-button-text">Selecione os 3 itens<br>para fechar o pedido</p>
+            <p id="confirmation-button-text">Selecione os 3 itens<br>para fechar o pedido</p>
         </div>
     </div>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
