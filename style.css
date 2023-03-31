@@ -100,3 +100,7 @@ body {
     line-height: 19px;
     color: #000000;
 }
+
+::-webkit-scrollbar {
+    -webkit-appearance: none;
+}
