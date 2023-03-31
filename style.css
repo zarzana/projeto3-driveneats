@@ -37,7 +37,7 @@ strong { font-weight: 700; }
     text-align: center;
 }
 
-.confirmation-menu-box button {
+.confirm-button {
     margin-top: 11px;
     width: 329px;
     height: 52px;
@@ -63,15 +63,15 @@ strong { font-weight: 700; }
     color: #50D074;
 }
 
-.cancel-text {
+.cancel-button {
     margin: 0;
     margin-left: 24px;
     width: 333px;
+    height: 52px;
     font-size: 20px;
     line-height: 23.44px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: none;
+    color: white;
 } 
 
 .top-bar {

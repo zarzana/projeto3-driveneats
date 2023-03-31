@@ -13,8 +13,8 @@
     <script src="script.js"></script>
 </head>
   <body>
-    <div class="confirmation-menu hidden">
-        <div class="confirmation-menu-box">
+    <div class="confirmation-menu">
+        <div class="confirmation-menu-box" data-test="confirm-order-modal">
             <p><strong>Confirme seu pedido</strong></p>
             <div class="confirmation-line">
                 <p>Produto 1</p>
@@ -32,10 +32,10 @@
                 <p><strong>TOTAL</strong></p>
                 <p><strong>R$ 27,70</strong></p>
             </div>
-            <button id="confirmButton">
+            <button id="confirmButton" class="confirm-button" data-test="confirm-order-btn">
                 <p><strong>Tudo certo, pode pedir!</strong></p>
             </button>
-            <p id="cancelButton" class="cancel-text">Cancelar</p>
+            <button id="cancelButton" class="cancel-button" data-test="cancel-order-btn" ><strong>Cancelar</strong></button>
         </div>
     </div>
     <div class="top-bar">
@@ -45,106 +45,106 @@
     <div class="content">
         <h3 class="category-title">Primeiro, seu prato</h3>
         <div class="product-list" id="dishes">
-            <div class="product-box">
+            <div class="product-box" data-test="dish">
                 <div class="product-box-content">
                     <img src="./images/spaghetti_alle_vongole.png">
-                    <h4 class="product-name">Spaghetti alle Vongole</h4>
+                    <h4 class="product-name" data-test="item-name">Spaghetti alle Vongole</h4>
                     <p class="product-description">Com mexilhões, alho e salsinha</p>
-                    <p class="product-price">R$ 42,90</p>
+                    <p class="product-price" data-test="item-price">R$ 42,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-            <div class="product-box">
+            <div class="product-box" data-test="dish">
                 <div class="product-box-content">
                     <img src="./images/tonnarelli_cacio_e_pepe.png">
-                    <h4 class="product-name">Tonnarelli Cacio e Pepe</h4>
+                    <h4 class="product-name" data-test="item-name">Tonnarelli Cacio e Pepe</h4>
                     <p class="product-description">Com pimenta e Pecorino Romano</p>
-                    <p class="product-price">R$ 38,90</p>
+                    <p class="product-price" data-test="item-price">R$ 38,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-            <div class="product-box">
+            <div class="product-box" data-test="dish">
                 <div class="product-box-content">
                     <img src="./images/rigatoni_all'amatriciana.png">
-                    <h4 class="product-name">Rigatoni all'Amatriciana</h4>
+                    <h4 class="product-name" data-test="item-name">Rigatoni all'Amatriciana</h4>
                     <p class="product-description">Com guanciale, tomate e queijo</p>
-                    <p class="product-price">R$ 49,90</p>
+                    <p class="product-price" data-test="item-price">R$ 49,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
             <div class="product-box">
-                <div class="product-box-content">
+                <div class="product-box-content" data-test="dish">
                     <img src="./images/linguine_alla_puttanesca.png">
-                    <h4 class="product-name">Linguine alla Puttanesca</h4>
+                    <h4 class="product-name" data-test="item-name">Linguine alla Puttanesca</h4>
                     <p class="product-description">Com anchovas, tomate e pimenta</p>
-                    <p class="product-price">R$ 45,90</p>
+                    <p class="product-price" data-test="item-price">R$ 45,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
         <h3 class="category-title">Agora, sua bebida</h3>
         <div class="product-list" id="drinks">
-            <div class="product-box">
+            <div class="product-box" data-test="drink">
                 <div class="product-box-content">
                     <img src="./images/coca-cola.jpg">
-                    <h4 class="product-name">Coca-Cola</h4>
+                    <h4 class="product-name" data-test="item-name">Coca-Cola</h4>
                     <p class="product-description">Lata de 350mL</p>
-                    <p class="product-price">R$ 9,50</p>
+                    <p class="product-price" data-test="item-price">R$ 9,50</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-            <div class="product-box">
+            <div class="product-box" data-test="drink">
                 <div class="product-box-content">
                     <img src="./images/vinho_malbec.jpg">
-                    <h4 class="product-name">Vinho Malbec</h4>
+                    <h4 class="product-name" data-test="item-name">Vinho Malbec</h4>
                     <p class="product-description">Garrafa 750mL</p>
-                    <p class="product-price">R$ 99,90</p>
+                    <p class="product-price" data-test="item-price">R$ 99,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-            <div class="product-box">
+            <div class="product-box" data-test="drink">
                 <div class="product-box-content">
                     <img src="./images/vinho_chardonnay.png">
-                    <h4 class="product-name">Vinho Chardonnay</h4>
+                    <h4 class="product-name" data-test="item-name">Vinho Chardonnay</h4>
                     <p class="product-description">Garrafa 750mL</p>
-                    <p class="product-price">R$ 110,60</p>
+                    <p class="product-price" data-test="item-price">R$ 110,60</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
         <h3 class="category-title">Por fim, sua sobremesa</h3>
         <div class="product-list" id="desserts">
-            <div class="product-box">
+            <div class="product-box" data-test="dessert">
                 <div class="product-box-content">
                     <img src="./images/tiramisu.png">
-                    <h4 class="product-name">Tiramisu</h4>
+                    <h4 class="product-name" data-test="item-name">Tiramisu</h4>
                     <p class="product-description">Fatia</p>
-                    <p class="product-price">R$ 14,90</p>
+                    <p class="product-price" data-test="item-price">R$ 14,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-            <div class="product-box">
+            <div class="product-box" data-test="dessert">
                 <div class="product-box-content">
                     <img src="./images/cannoli.png">
-                    <h4 class="product-name">Cannoli</h4>
+                    <h4 class="product-name" data-test="item-name">Cannoli</h4>
                     <p class="product-description">Unidade</p>
-                    <p class="product-price">R$ 21,90</p>
+                    <p class="product-price" data-test="item-price">R$ 21,90</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
-            <div class="product-box">
+            <div class="product-box" data-test="dessert">
                 <div class="product-box-content">
                     <img src="./images/panna_cotta.png">
-                    <h4 class="product-name">Panna Cotta</h4>
+                    <h4 class="product-name" data-test="item-name">Panna Cotta</h4>
                     <p class="product-description">Unidade</p>
-                    <p class="product-price">R$ 23,50</p>
+                    <p class="product-price" data-test="item-price">R$ 23,50</p>
                     <ion-icon name="checkmark-circle"></ion-icon>
                 </div>
             </div>
         </div>
     </div>
     <div class="bottom-bar">
-        <button disabled type="button" class="confirmation-button-inactive">
+        <button disabled type="button" class="confirmation-button-inactive" data-test="order-btn">
             <p id="confirmation-button-text">Selecione os 3 itens<br>para fechar o pedido</p>
         </button>
     </div>
