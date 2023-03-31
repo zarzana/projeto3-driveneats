@@ -104,9 +104,16 @@ body {
 /* Hiding scroll bars */
 
 /* Firefox */
-html {
+html, .product-list {
     scrollbar-width: none;
 }
-.product-list {
-    scrollbar-width: none;
+
+/* WebKit */
+body::-webkit-scrollbar, .product-list::-webkit-scrollbar{
+    display: none;
+}
+
+/* Edge */
+html, .product-list {
+    -ms-overflow-style: none;
 }
