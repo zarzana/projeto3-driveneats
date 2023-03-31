@@ -99,3 +99,6 @@ body {
     line-height: 19px;
     color: #000000;
 }
+
+@media (max-width: 614px) {
+}
