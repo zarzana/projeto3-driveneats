@@ -47,11 +47,13 @@ body {
 .category-title {
     font-family: 'Righteous', cursive;
     font-size: 26px;
-    padding-top: 27px;
-    padding-bottom: 17px;
+    padding-top: 23px;
+    padding-bottom: 13px;
     }
 
 .product-list {
+    padding-top: 4px;
+    padding-bottom: 4px;
     display: flex;
     overflow-x: scroll
 }
