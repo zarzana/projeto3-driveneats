@@ -101,6 +101,24 @@ body {
     color: #000000;
 }
 
+.confirmation-button-inactive {
+    width: 364px;
+    height: 61px;
+    margin-left: 25px;
+    margin-top: 15px;
+    background: #CBCBCB;
+    border-radius: 50px;
+}
+
+.confirmation-button-inactive p {
+    padding-top: 6px;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    letter-spacing: 0.018em;
+    color: #FFFFFF;
+}
+
 /* Hiding scroll bars */
 
 /* Firefox */
