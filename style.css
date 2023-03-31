@@ -123,6 +123,7 @@ body {
 }
 
 .confirmation-button-inactive {
+    border: none;
     width: 364px;
     height: 61px;
     margin-left: 25px;
@@ -132,7 +133,6 @@ body {
 }
 
 .confirmation-button-inactive p {
-    padding-top: 7px;
     font-size: 20px;
     line-height: 23px;
     text-align: center;
@@ -142,10 +142,6 @@ body {
 
 .confirmation-button-active {
     background: #32B72F;
-}
-
-.confirmation-button-active p {
-    padding-top: 18px;
 }
 
 /* Hiding scroll bars */

@@ -30,10 +30,12 @@ function confirmationButtonActivation() {
     if (document.querySelectorAll('.product-box-selected').length == 3) {
         document.querySelector('.confirmation-button-inactive').classList.add('confirmation-button-active');
         document.getElementById('confirmation-button-text').innerHTML = 'Fechar pedido';
+        document.querySelector('.confirmation-button-inactive').removeAttribute('disabled');
     }
     else if (document.querySelector('.confirmation-button-inactive').classList.contains('confirmation-button-active')) {
         document.querySelector('.confirmation-button-inactive').classList.remove('confirmation-button-active');
         document.getElementById('confirmation-button-text').innerHTML = 'Selecione os 3 itens<br>para fechar o pedido';
+        document.querySelector('.confirmation-button-inactive').setAttribute('disabled', '');
     }
 }
 
