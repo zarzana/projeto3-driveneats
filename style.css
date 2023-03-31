@@ -14,7 +14,7 @@ strong { font-weight: 700; }
     height: 100%;
     background:rgba(255, 255, 255, 0.9);
     z-index: 2;
-    display: none;
+    display: flex;
     justify-content: center;
     align-items: center;
 }
@@ -211,6 +211,10 @@ strong { font-weight: 700; }
 
 .confirmation-button-active {
     background: #32B72F;
+}
+
+.hidden {
+    display: none;
 }
 
 /* Hiding scroll bars */
