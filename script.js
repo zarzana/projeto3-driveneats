@@ -51,7 +51,6 @@ function confirmationButtonListener() {
     confirmationButton = document.getElementsByClassName('confirmation-button-inactive')[0];
     confirmationButton.addEventListener('click', () => {
         purchaseBoxAndMessage();
-        console.log(purchaseMessage)
         document.getElementsByClassName('confirmation-menu')[0].classList.remove('hidden');
     })
 
@@ -98,7 +97,14 @@ function confirmCancelListener(message) {
     var cancelButton = document.getElementById('cancelButton');
 
     confirmButton.addEventListener('click', () => {
-        // send message to WhatsApp Web
+
+        let clientName = prompt('Qual o nome?')
+        let clientAddress = prompt('Qual o endereço?')
+
+        // writing message
+        purchaseMessage += `\n\nNome: ${clientName}\nEndereço: ${clientAddress}`
+
+        window.open(`https://wa.me/5599999999999?text=${encodeURIComponent(purchaseMessage)}`, '_self')
     })
 
     cancelButton.addEventListener('click', () => {
