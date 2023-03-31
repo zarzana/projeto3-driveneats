@@ -126,7 +126,7 @@ body {
     width: 364px;
     height: 61px;
     margin-left: 25px;
-    margin-top: 15px;
+    margin-top: 16px;
     background: #CBCBCB;
     border-radius: 50px;
 }
@@ -145,7 +145,7 @@ body {
 }
 
 .confirmation-button-active p {
-    padding-top: 17px;
+    padding-top: 18px;
 }
 
 /* Hiding scroll bars */
