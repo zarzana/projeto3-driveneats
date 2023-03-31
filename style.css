@@ -1,4 +1,5 @@
 body {
+    width: 100%;
     background: #EEEEEE;
     font-family: 'Roboto', sans-serif;
 }
@@ -35,10 +36,6 @@ body {
     height: 92px;
     background-color: white;
     z-index: 1;
-}
-
-.content-box {
-    width: 100%;
 }
 
 .content {
